@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.redtourism.demo.dao.ActivityMapper" >
+  <resultMap id="BaseResultMap" type="com.redtourism.demo.pojo.Activity" >
+      <result property="id" column="id" />
+      <result property="userId" column="user_id"  />
+      <result property="mainPicture" column="main_picture" />
+      <result property="activityPeople" column="activity_people" />
+      <result property="activityTitle" column="activity_title"  />
+      <result property="activityContent" column="activity_content"/>
+      <result property="activityStatus" column="activity_status"  />
+      <result property="activityType" column="activity_type"  />
+      <result property="activityTime" column="activity_time"  />
+      <result property="activityPoint" column="activity_point"  />
+      <result property="activityAddress" column="activity_address"  />
+      <result property="joinpeople" column="joinpeople" />
+      <result property="createTime" column="create_time" />
+      <result property="updateTime" column="update_time"  />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, user_id, main_picture, activity_people, activity_title, activity_content, activity_status,
+    activity_type, activity_time, activity_point, activity_address,joinpeople, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from red_tourism_activity
+    where id = #{aid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from red_tourism_activity
+    where id = #{aid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.redtourism.demo.pojo.Activity" >
+    insert into red_tourism_activity (id, user_id, main_picture,
+      activity_people, activity_title, activity_content, 
+      activity_status, activity_type,activity_time,activity_point, activity_address,
+      joinpeople, create_time, update_time
+      )
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{mainPicture,jdbcType=VARCHAR},
+      #{activityPeople,jdbcType=INTEGER}, #{activityTitle,jdbcType=CHAR}, #{activityContent,jdbcType=VARCHAR}, 
+      #{activityStatus,jdbcType=INTEGER}, #{activityType,jdbcType=INTEGER},#{activityTime,jdbcType=DECIMAL},#{activityType,jdbcType=INTEGER},  #{activityAddress,jdbcType=VARCHAR},
+      #{joinpeople,jdbcType=INTEGER}, now(), now()
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.redtourism.demo.pojo.Activity" >
+    insert into red_tourism_activity
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        aid,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="mainPicture != null" >
+        main_picture,
+      </if>
+      <if test="activityPeople != null" >
+        activity_people,
+      </if>
+      <if test="activityTitle != null" >
+        activity_title,
+      </if>
+      <if test="activityContent != null" >
+        activity_content,
+      </if>
+      <if test="activityStatus != null" >
+        activity_status,
+      </if>
+      <if test="activityType != null" >
+        activity_type,
+      </if>
+      <if test="activityTime != null" >
+        activity_time,
+      </if>
+      <if test="activityAddress != null" >
+        activity_address,
+      </if>
+      <if test="joinpeople != null" >
+        joinpeople,
+      </if>
+      <if test="createTime != null" >
+        activity_point,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+      <if test="updateTime != null" >
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="mainPicture != null" >
+        #{mainPicture,jdbcType=VARCHAR},
+      </if>
+      <if test="activityPeople != null" >
+        #{activityPeople,jdbcType=INTEGER},
+      </if>
+      <if test="activityTitle != null" >
+        #{activityTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="activityContent != null" >
+        #{activityContent,jdbcType=VARCHAR},
+      </if>
+      <if test="activityStatus != null" >
+        #{activityStatus,jdbcType=INTEGER},
+      </if>
+      <if test="activityType != null" >
+        #{activityType,jdbcType=INTEGER},
+      </if>
+      <if test="activityTime != null" >
+        #{activityType,jdbcType=DECIMAL},
+      </if>
+      <if test="activityAddress != null" >
+        #{activityAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="joinpeople != null" >
+        #{joinpeople,jdbcType=INTEGER},
+      </if>
+      <if test="joinpeople != null" >
+        #{joinpeople,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        now(),
+      </if>
+      <if test="updateTime != null" >
+        now(),
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.redtourism.demo.pojo.Activity" >
+    update red_tourism_activity
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="mainPicture != null" >
+        main_picture = #{mainPicture,jdbcType=VARCHAR},
+      </if>
+      <if test="activityPeople != null" >
+        activity_people = #{activityPeople,jdbcType=INTEGER},
+      </if>
+      <if test="activityTitle != null" >
+        activity_title = #{activityTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="activityContent != null" >
+        activity_content = #{activityContent,jdbcType=VARCHAR},
+      </if>
+      <if test="activityStatus != null" >
+        activity_status = #{activityStatus,jdbcType=INTEGER},
+      </if>
+      <if test="activityType != null" >
+        activity_type = #{activityType,jdbcType=INTEGER},
+      </if>
+      <if test="activityTime != null" >
+        activity_type = #{activityTime,jdbcType=DECIMAL},
+      </if>
+      <if test="activityAddress != null" >
+        activity_address = #{activityAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="joinpeople != null" >
+        activity_point = #{activityPoint,jdbcType=INTEGER},
+      </if>
+      <if test="joinpeople != null" >
+        joinpeople = #{joinpeople,jdbcType=INTEGER},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null" >
+        update_time = now()
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.redtourism.demo.pojo.Activity" >
+    update red_tourism_activity
+    set user_id = #{userId,jdbcType=INTEGER},
+      main_picture = #{mainPicture,jdbcType=VARCHAR},
+      activity_people = #{activityPeople,jdbcType=INTEGER},
+      activity_title = #{activityTitle,jdbcType=VARCHAR},
+      activity_content = #{activityContent,jdbcType=VARCHAR},
+      activity_status = #{activityStatus,jdbcType=INTEGER},
+      activity_type = #{activityType,jdbcType=INTEGER},
+      activity_time = #{activityTime,jdbcType=DECIMAL},
+      activity_address = #{activityAddress,jdbcType=VARCHAR},
+      activity_point = #{activityPoint,jdbcType=INTEGER},
+      joinpeople = #{joinpeople,jdbcType=INTEGER},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = now()
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectList" resultMap="BaseResultMap" >
+    select
+    <include refid="Base_Column_List"/>
+    from red_tourism_activity
+    order by id desc
+  </select>
+
+  <select id="selectByType" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+  select
+  <include refid="Base_Column_List" />
+  from red_tourism_activity
+  where activity_type = #{type,jdbcType=INTEGER}
+  </select>
+
+  <select id="selectByNameAndType" resultMap="BaseResultMap" parameterType="map">
+    select
+    <include refid="Base_Column_List"></include>
+    from red_tourism_activity
+    where activity_status = 1
+    <if test="activityTitle != null">
+      and activity_title like #{activityTitle}
+    </if>
+    <if test="type != null">
+      and activity_type = #{type}
+    </if>
+
+  </select>
+    <select id="selectByUserId" resultType="com.redtourism.demo.pojo.Activity">
+      select
+      <include refid="Base_Column_List"/>
+      from red_tourism_activity
+      where user_id = #{userId}
+    </select>
+
+    <update id="addJoinpeopleByPrimaryKey" parameterType="integer" >
+    update red_tourism_activity
+    set
+        joinpeople = joinpeople + 1
+    where id = #{aid,jdbcType=INTEGER}
+  </update>
+
+  <update id="reduceJoinpeopleByPrimaryKey" parameterType="integer" >
+    update red_tourism_activity
+    set
+      joinpeople = joinpeople - 1
+    where id = #{aid,jdbcType=INTEGER}
+  </update>
+</mapper>

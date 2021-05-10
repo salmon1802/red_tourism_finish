@@ -1,0 +1,58 @@
+DROP TABLE IF EXISTS `red_tourism_user`;
+CREATE TABLE `red_tourism_user` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT COMMENT '用户表id',
+  `username` VARCHAR(50) NOT NULL COMMENT '用户名',
+  `password` VARCHAR(50) NOT NULL COMMENT '用户密码，MD5加密',
+  `phone` VARCHAR(20) DEFAULT NULL COMMENT '用户手机号',
+  `question` VARCHAR(100) DEFAULT NULL COMMENT '找回密码问题',
+  `answer` VARCHAR(100) DEFAULT NULL COMMENT '找回密码答案',
+  `role` INT(4) NOT NULL COMMENT '角色1-管理员,0-普通用户',
+  `create_time` DATETIME NOT NULL COMMENT '创建时间',
+  `update_time` DATETIME NOT NULL COMMENT '最后一次更新时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_name_unique` (`username`) USING BTREE
+) ENGINE=INNODB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `red_tourism_activity`;
+CREATE TABLE `red_tourism_activity` (
+  `aid` INT(11) NOT NULL AUTO_INCREMENT COMMENT '活动表id',
+  `user_id` INT(11) DEFAULT NULL COMMENT '创建者id',
+  `main_picture` VARCHAR(255) DEFAULT '' COMMENT '封面图片',
+  `activity_people` INT(11) DEFAULT NULL COMMENT '参与活动最大人数',
+  `activity_title` CHAR(50) DEFAULT NULL COMMENT '活动主题',
+  `activity_content` VARCHAR(255) DEFAULT NULL COMMENT '活动的内容',
+  `activity_status` INT(11)  DEFAULT NULL COMMENT '活动状态(1代表进行，0代表结束)',
+  `activity_type` INT(11)  DEFAULT NULL COMMENT '1.党建旅游 2.研学旅游 3.红色旅游 4.娱乐旅游',
+  `activity_address` VARCHAR(100) DEFAULT NULL COMMENT '活动的地点',
+  `joinpeople` INT(11) DEFAULT NULL COMMENT '活动当前参加的人数',
+  `create_time` DATETIME DEFAULT NULL,
+  `update_time` DATETIME DEFAULT NULL,
+   PRIMARY KEY (`aid`) USING BTREE
+) ENGINE=INNODB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `red_tourism_activity_info`;
+CREATE TABLE `red_tourism_activity_info`  (
+  `id` INT(11) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '活动评论表id',
+  `aid` INT(11) UNSIGNED NULL DEFAULT NULL COMMENT '活动id',
+  `user_id` INT(11) UNSIGNED NULL DEFAULT NULL COMMENT '用户id',
+  `content` VARCHAR(2048)  DEFAULT '' COMMENT '评论内容',
+  `point` INT(11) UNSIGNED NULL DEFAULT 0 COMMENT '是否点赞：0没点，1点了',
+  `create_time` DATETIME DEFAULT NULL,
+  `update_time` DATETIME DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = INNODB AUTO_INCREMENT = 116 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `red_tourism_activity_join`;
+CREATE TABLE `red_tourism_activity_join` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `user_id` INT(11) NOT NULL,
+  `aid` INT(11) DEFAULT NULL COMMENT '活动id',
+  `quantity` INT(11) DEFAULT NULL COMMENT '当前活动的剩余报名数量',
+  `checked` INT(11) DEFAULT NULL COMMENT '是否选择,1=已勾选,0=未勾选',
+  `create_time` DATETIME DEFAULT NULL COMMENT '创建时间',
+  `update_time` DATETIME DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`),
+  KEY `user_id_index` (`user_id`) USING BTREE
+) ENGINE=INNODB AUTO_INCREMENT=146 DEFAULT CHARSET=utf8;

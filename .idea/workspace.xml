@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c778c05-767a-48d2-9c1c-e55b39e492cf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/ActivityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/ActivityServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>session.</find>
+      <find>activityType</find>
+      <find>Integer</find>
+      <find>userInfoMapper</find>
+    </findStrings>
+    <dirStrings>
+      <dir>E:\外快\red_tourism-main\src\main\java</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="F:/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="F:\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectId" id="1n61O4aIT8cxal41RvouWrTjGzP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1613962904636" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/redtourism/demo/pojo" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/redtourism/demo/dao" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="red_tourism" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.redtourism.demo.DemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c778c05-767a-48d2-9c1c-e55b39e492cf" name="Default Changelist" comment="" />
+      <created>1610695690785</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610695690785</updated>
+      <workItem from="1610695705627" duration="1495000" />
+      <workItem from="1610697209967" duration="2660000" />
+      <workItem from="1610699925641" duration="6518000" />
+      <workItem from="1610707783327" duration="31000" />
+      <workItem from="1610707831313" duration="387000" />
+      <workItem from="1610708339529" duration="534000" />
+      <workItem from="1610708962323" duration="1128000" />
+      <workItem from="1610710451059" duration="12112000" />
+      <workItem from="1610774003806" duration="6800000" />
+      <workItem from="1610780892058" duration="3086000" />
+      <workItem from="1610784043822" duration="22926000" />
+      <workItem from="1610859734777" duration="392000" />
+      <workItem from="1610860187293" duration="39000" />
+      <workItem from="1610860253332" duration="493000" />
+      <workItem from="1610861648601" duration="610000" />
+      <workItem from="1610877173511" duration="55487000" />
+      <workItem from="1611106637757" duration="31769000" />
+      <workItem from="1614169791324" duration="2083000" />
+      <workItem from="1614241220020" duration="2981000" />
+      <workItem from="1614407170020" duration="14109000" />
+      <workItem from="1614479851929" duration="12475000" />
+      <workItem from="1614587774312" duration="2095000" />
+      <workItem from="1614692851788" duration="1513000" />
+      <workItem from="1615013576322" duration="14862000" />
+      <workItem from="1615082360988" duration="6928000" />
+      <workItem from="1615099455407" duration="9341000" />
+      <workItem from="1615193033427" duration="6715000" />
+      <workItem from="1615287294769" duration="2870000" />
+      <workItem from="1615374394449" duration="1452000" />
+      <workItem from="1615439353243" duration="22869000" />
+      <workItem from="1615560218325" duration="52809000" />
+      <workItem from="1615799740761" duration="6934000" />
+      <workItem from="1615962324051" duration="31297000" />
+      <workItem from="1616153321934" duration="13516000" />
+      <workItem from="1616307281553" duration="5402000" />
+      <workItem from="1616425166061" duration="2148000" />
+      <workItem from="1616584490699" duration="2480000" />
+      <workItem from="1616635036709" duration="3210000" />
+      <workItem from="1616756900230" duration="7212000" />
+      <workItem from="1616821770165" duration="4797000" />
+      <workItem from="1618932400930" duration="229000" />
+      <workItem from="1619679590291" duration="1052000" />
+      <workItem from="1619682530937" duration="11000" />
+      <workItem from="1620614405318" duration="21000" />
+      <workItem from="1620614646476" duration="77000" />
+      <workItem from="1620614733647" duration="1283000" />
+    </task>
+    <task id="LOCAL-00001" summary="第一次提交">
+      <created>1610721316528</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610721316528</updated>
+    </task>
+    <task id="LOCAL-00002" summary="第二次提交">
+      <created>1610808222423</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610808222423</updated>
+    </task>
+    <task id="LOCAL-00003" summary="第三次提交">
+      <created>1610860713639</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1610860713639</updated>
+    </task>
+    <task id="LOCAL-00004" summary="第三次提交">
+      <created>1610861665773</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610861665773</updated>
+    </task>
+    <task id="LOCAL-00005" summary="第三次提交">
+      <created>1610861875134</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610861875134</updated>
+    </task>
+    <task id="LOCAL-00006" summary="第三次提交">
+      <created>1610861970843</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610861970843</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="第一次提交" />
+    <MESSAGE value="第二次提交" />
+    <MESSAGE value="第三次提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三次提交" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="367" y="80" key="#Notifications" timestamp="1620616175059">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="367" y="80" key="#Notifications/0.0.1549.840@0.0.1549.840" timestamp="1620616175059" />
+    <state x="555" y="162" key="FileChooserDialogImpl" timestamp="1620616284533">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="555" y="162" key="FileChooserDialogImpl/0.0.1549.840@0.0.1549.840" timestamp="1620616284533" />
+    <state x="606" y="334" width="360" height="172" key="Github.CreateGistDialog" timestamp="1620616167164">
+      <screen x="0" y="0" width="1549" height="840" />
+    </state>
+    <state x="606" y="334" width="360" height="172" key="Github.CreateGistDialog/0.0.1549.840@0.0.1549.840" timestamp="1620616167164" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/redtourism/demo/controller/portal/UserController.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/redtourism/demo/service/impl/SignInServiceImpl.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>userInfoMapper.selectByPrimaryKey(userInfo.getId())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>validResponse.isSuccess()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ServerResponse.createByErrorCodeMessage(ResponseCode.NEED_LOGIN.getCode(),ResponseCode.NEED_LOGIN.getDesc());</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (red_tourism)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8.0_191</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>red_tourism</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
